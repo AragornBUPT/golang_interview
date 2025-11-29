@@ -5,11 +5,17 @@ import (
 	// "golang_interview/grammar/math_app"
 	// "golang_interview/grammar/concurrency"
 	// "golang_interview/application"
-	"golang_interview/grammar/string_my"
+	// "golang_interview/grammar/string_my"
+	// "golang_interview/algorithm/leetcode"
+	// "golang_interview/application"
+	// "golang_interview/grammar"
+	// "golang_interview/application/random"
+	// "golang_interview/application/lottery"
 )
 
 func main() {
 	fmt.Println("main")
+	fmt.Println()
 
 	// 测试大数
 	// mod := 10 ^ 9 + 7
@@ -53,7 +59,24 @@ func main() {
 
 	// 将彩票结果格式化
 	// application.FormatNumbers()
+	// 对时间戳取模，生成随机彩票数字
+	// lottery.GenerateLottery()
 
 	// 测试strings.Builder用法
-	stringmy.TestBuilder()
+	// stringmy.TestBuilder()
+
+	// leetcode，随机生成题号
+	// random.RandLeetcode()
+
+	// 牛客网，随机生成题号
+	// random.RandNewCoder()
+
+	// leetcode题目，将杂乱无章的数字排序
+	// mapping := []int{8, 9, 4, 0, 2, 1, 3, 5, 7, 6}
+	// nums := []int{991, 338, 38}
+	// leetcode.SortJumbled(mapping, nums)
+	// leetcode.TestSortMap(mapping)
+
+	// 读取标准输入输出
+	// grammar.Input()
 }
