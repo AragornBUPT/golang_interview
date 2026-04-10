@@ -2,13 +2,17 @@ package main
 
 import (
 	"fmt"
+	// "strconv"
+	// "strings"
+	// "golang_interview/grammar"
 	// "golang_interview/grammar/math_app"
 	// "golang_interview/grammar/concurrency"
-	// "golang_interview/application"
 	// "golang_interview/grammar/string_my"
+	// "golang_interview/grammar/go_expert_programming"
+	// "golang_interview/grammar/newcoder"
 	// "golang_interview/algorithm/leetcode"
+	"golang_interview/algorithm/beauty_of_programming"
 	// "golang_interview/application"
-	// "golang_interview/grammar"
 	// "golang_interview/application/random"
 	// "golang_interview/application/lottery"
 )
@@ -23,26 +27,42 @@ func main() {
 	// mod1 := 1000000007
 	// fmt.Println(mod1)
 
-	/* // leetcode lru链表
-	var lruCache leetcode.LRUCache
-	lruCache = leetcode.Constructor(2)
-
-	lruCache.Put(1, 1)
-	lruCache.Put(2, 2)
-	lruCache.Get(1)
-	lruCache.Put(3, 3)
-	lruCache.Get(2)
-	lruCache.Put(4, 4)
-	lruCache.Get(1)
-	lruCache.Get(3)
-	lruCache.Get(4) */
-
 	// 使用grammar包中的IsTransformable函数
 	// result := grammar.IsTransformable("321", "123")
 	// fmt.Printf("Is \"321\" transformable to \"123\": %v\n", result)
 
 	// 测试byte和rune类型
 	// grammar.GetType()
+
+	// 《Go专家编程》，1.2.1
+	// goexpertprogramming.SliceExtend()
+	// goexpertprogramming.SliceExpress()
+
+	// leetcode，随机生成题号
+	// random.RandLeetcode()
+
+	// leetcode题目，将杂乱无章的数字排序
+	// mapping := []int{8, 9, 4, 0, 2, 1, 3, 5, 7, 6}
+	// nums := []int{991, 338, 38}
+	// leetcode.SortJumbled(mapping, nums)
+	// leetcode.TestSortMap(mapping)
+
+	// leetcode lru链表
+	// var lruCache leetcode.LRUCache
+	// lruCache = leetcode.Constructor(2)
+
+	// lruCache.Put(1, 1)
+	// lruCache.Put(2, 2)
+	// lruCache.Get(1)
+	// lruCache.Put(3, 3)
+	// lruCache.Get(2)
+	// lruCache.Put(4, 4)
+	// lruCache.Get(1)
+	// lruCache.Get(3)
+	// lruCache.Get(4)
+
+	// 牛客网，随机生成题号
+	// random.RandNewCoder()
 
 	// 牛客网题目，slice作为参数传递后是否会被修改
 	// grammar.TransferList()
@@ -57,6 +77,9 @@ func main() {
 	// c := 3
 	// math_app.CountGoodTriplets(arr, a, b, c)
 
+	// 牛客网题目，测试切片迭代时的协程的变量导入
+	// newcoder.WaitGroupTest()
+
 	// 将彩票结果格式化
 	// application.FormatNumbers()
 	// 对时间戳取模，生成随机彩票数字
@@ -65,18 +88,18 @@ func main() {
 	// 测试strings.Builder用法
 	// stringmy.TestBuilder()
 
-	// leetcode，随机生成题号
-	// random.RandLeetcode()
-
-	// 牛客网，随机生成题号
-	// random.RandNewCoder()
-
-	// leetcode题目，将杂乱无章的数字排序
-	// mapping := []int{8, 9, 4, 0, 2, 1, 3, 5, 7, 6}
-	// nums := []int{991, 338, 38}
-	// leetcode.SortJumbled(mapping, nums)
-	// leetcode.TestSortMap(mapping)
-
 	// 读取标准输入输出
 	// grammar.Input()
+	// grammar.InputList()
+
+	// 并发
+	// 循环+闭包
+	// concurrency.PrintClosure()
+	// concurrency.PrintClosure2()
+	// concurrency.PrintClosure3()
+	// concurrency.PrintClosure4()
+
+	// stringmy.SortString()
+
+	beauty_of_programming.UtilCpu()
 }

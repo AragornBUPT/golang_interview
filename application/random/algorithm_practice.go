@@ -8,7 +8,7 @@ import (
 
 // leetcode
 func RandLeetcode() {
-	question_number := rand.Intn(4131) + 1
+	question_number := rand.Intn(2) + 1
 
 	fmt.Println(question_number)
 }

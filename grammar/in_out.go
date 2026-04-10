@@ -1,6 +1,12 @@
 package grammar
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
 
 func Input() {
 	// 每次读取一个字符串（以空格作为分隔符）
@@ -22,4 +28,37 @@ func Input() {
 
 		fmt.Println(a)
 	}
+}
+
+func InputList() {
+	// var s string = ""
+	// fmt.Scanln(&s)
+	// sList := strings.Split(s, " ")
+
+	// fmt.Println(sList)
+
+	// var iList []int
+	// for _, i := range sList {
+	// 	i_t, _ := strconv.Atoi(i)
+	// 	iList = append(iList, i_t)
+	// }
+
+	// fmt.Println(iList)
+
+	scanner := bufio.NewScanner(os.Stdin)
+	var input string
+	if scanner.Scan() {
+		input = scanner.Text()
+		fmt.Println(input)
+	}
+
+	inputList := strings.Fields(input)
+	fmt.Println(inputList)
+
+	var iList []int
+	for _, i_s := range inputList {
+		i_t, _ := strconv.Atoi(i_s)
+		iList = append(iList, i_t)
+	}
+	fmt.Println(iList)
 }
