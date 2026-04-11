@@ -1,4 +1,4 @@
-package application
+package lottery
 
 import (
 	"fmt"
